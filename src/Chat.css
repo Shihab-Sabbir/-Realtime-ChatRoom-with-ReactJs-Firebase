@@ -4,11 +4,17 @@
   background-repeat: repeat;
   background-position: center;
   padding: 20px;
-  overflow: scroll;
+  overflow-y: scroll;
+}
+
+.chat_body::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 .chat {
-  flex: 0.65;
+  flex: 0.75;
   display: flex;
   flex-direction: column;
 }

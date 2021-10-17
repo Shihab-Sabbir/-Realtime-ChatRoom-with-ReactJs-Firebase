@@ -1,48 +1,55 @@
-.sidebar{
-    flex: 0.35;
+.sidebar {
+  display: flex;
+  flex: 0.25;
+  flex-direction: column;
+}
+.sidebar_header {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 20px;
+  border-right: 1px solid lightgray;
 }
 
-.sidebar_search{
-    display: flex;
-    align-items: center;
-    background-color: #f6f6f6;
-    height: 39px;
-    padding: 10px;
+.sidebar_logout {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px;
+  margin-top: -25px;
+  margin-left: 8px;
 }
-
-.sidebar_searchContainer > .MuiSvgIcon-root{
-    color: gray;
-    padding: 10px;
-}
-
-.sidebar_searchContainer > input{
-    border:none;
-    margin-left: 10px;
-}
-.sidebar_searchContainer{
-    display: flex;
-    align-items: center;
-    background-color: white;
-    width: 100%;
-    height: 35px;
-    border-radius: 20px;
-}
-
-.sidebar_header{
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    border-right: 1px solid lightgray;
-}
-
-.sidebar_headerRight{
-    display: flex;
-    align-items: center;    
-    justify-content: space-between;
-    min-width: 10vw;
+.sidebar_logout > button {
+  color: rgb(241, 176, 176);
+  padding: 10px;
+  border-radius: 10px;
+  border: lightgray;
+  box-shadow: -1px 4px 20px -6px rgba(14, 2, 2, 0.5);
 }
 
 .sidebar_headerRight > .MuiSvgIcon-root {
-    margin-right: 2vw;
-    font-size: 20px !important;
+  margin: 2vw;
+  font-size: 24px !important;
+}
+
+.sidebar_chats {
+  flex: 1;
+  background-color: white;
+  overflow: scroll;
+}
+
+.sidebar_chats::-webkit-scrollbar {
+  display: none;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.sidebar_header > h4 {
+  margin-left: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
 }
