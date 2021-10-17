@@ -1,3 +1,7 @@
+# Deployed on https://whatsapp-clone-485a9.web.app/
+
+Features : Creating Chatrooms , RealTime Text Chating , Delete Chat , Login with Google Acoount , Logout .
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
